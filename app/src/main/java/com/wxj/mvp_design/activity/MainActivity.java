@@ -1,7 +1,9 @@
-package com.wxj.mvp_design;
+package com.wxj.mvp_design.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.wxj.mvp_design.R;
 
 public class MainActivity extends AppCompatActivity {
 

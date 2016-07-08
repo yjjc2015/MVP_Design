@@ -1,6 +1,5 @@
 package com.wxj.mvp_design.presenter;
 
-import com.wxj.mvp_design.LoginActivity;
 import com.wxj.mvp_design.bean.User;
 import com.wxj.mvp_design.model.OnLoginListener;
 import com.wxj.mvp_design.model.UserModel;

@@ -1,4 +1,4 @@
-package com.wxj.mvp_design;
+package com.wxj.mvp_design.activity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.wxj.mvp_design.R;
 import com.wxj.mvp_design.presenter.UserLoginPresenter;
 import com.wxj.mvp_design.view.IUserLoginView;
 
@@ -21,7 +21,6 @@ import com.wxj.mvp_design.view.IUserLoginView;
 public class LoginActivity extends AppCompatActivity implements OnClickListener, IUserLoginView {
 
 
-    private ProgressBar login_progress;
     private AutoCompleteTextView email;
     private EditText password;
     private Button email_sign_in_button;
@@ -34,12 +33,10 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
-
     }
 
 
     private void initView() {
-        login_progress = (ProgressBar) findViewById(R.id.login_progress);
         email = (AutoCompleteTextView) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         email_sign_in_button = (Button) findViewById(R.id.email_sign_in_button);
